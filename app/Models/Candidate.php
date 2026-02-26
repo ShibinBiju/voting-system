@@ -12,7 +12,8 @@ class Candidate extends Model
 
     public $fillable = [
         'name',
-        'party',
+        'position',
+        'description',
     ];
 
     public function votes()
