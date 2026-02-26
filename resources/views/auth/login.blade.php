@@ -2,6 +2,16 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
+    <!-- System Features -->
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+        <h3 class="text-sm font-semibold text-blue-900 mb-2">Welcome to Our Voting System</h3>
+        <p class="text-xs text-blue-700 leading-relaxed">
+            Experience secure and transparent voting with real-time results, role-based access control, 
+            and comprehensive candidate management. Our platform ensures fair elections with advanced 
+            security features and intuitive interfaces for both voters and administrators.
+        </p>
+    </div>
+
     <form method="POST" action="{{ route('login') }}" class="space-y-6">
         @csrf
 
